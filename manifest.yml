@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: node-red-duartejm
+  host: node-red-duartejm
+  disk_quota: 1024M
+  services:
+  - node-red-duartejm-cloudantNoSQLDB
+  - availability-monitoring-auto
+  env:
+    NODE_RED_USERNAME: duartejm
+    NODE_RED_PASSWORD: tldrake_8909
